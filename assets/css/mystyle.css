@@ -1,0 +1,445 @@
+@font-face{
+    src: url(../fonts/SourceSansPro-Regular.otf);
+    font-family: "SourceSansPro-Regular";
+}
+:root{
+    --primary-font: "SourceSansPro-Regular";
+    --secondary-font: "Playfair Display", "Segoe UI", "Helvetica Neue", Arial;
+    --brand-color: #03a87c;
+    --primary-color: #212529;
+    --secondary-color: rgba(0,0,0,0.6);
+    --white: #fff;
+    --violet: blueviolet;
+
+}
+body{
+    margin: 0px;
+}
+/*common section start*/
+*{
+    box-sizing: border-box;
+}
+.b1{
+    border: 1px solid red;
+}
+.container{
+    width: 70%;
+    margin: 0px auto;
+}
+.d-flex{
+    display: flex;
+}
+
+h3{
+    color: #212529;
+    font-family: "SourceSansPro-Regular";
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+h3 span{
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--primary-color);
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--primary-font);
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+p{  
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.5;
+}    
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+ul li{
+    list-style: none;
+}
+
+/*common section end*/
+/*nav section start*/
+nav{
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    flex: 1 1 10%;
+    justify-content: left;
+    align-items: center;
+}
+.logo a{
+    font-family: (var(--secondary-font));
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--brand-color);
+}
+.nav-content{
+    flex: 1 1 70%;
+    justify-content: left;
+}
+.nav-content ul li{
+    padding: 10px 20px;
+}
+.nav-content ul li a{
+    font-family: "SourceSansPro-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+.nav-content ul li a:hover{
+    color: #03a87c;
+}
+.nav-content ul li a small{
+    background-color: var(--violet);
+    padding: 3px;
+    border-radius: 3px;
+    color: var(--white);
+    font-family: "SourceSansPro-Regular";
+}
+.theme{
+    flex: 1 1 20%;
+    justify-content: right;
+    align-items: center;
+}
+.theme a{
+    font-family: var(--primary-font);
+    font-size: 15px;
+    color: var(--brand-color);
+    font-weight: 400;
+    border: 1px solid var(--brand-color);
+    border-radius: 3px;
+    padding: 10px 15px;
+    transition: 0.4s;
+}
+.theme a:hover{
+    background-color: var(--brand-color);
+    color: var(--white);
+}
+/*nav section end*/
+/*banner section start*/
+.banner{
+    margin: 30px 0px;
+}
+.banner-content{
+    flex: 1 1 50%;
+    padding: 70px 30px;
+}
+.banner-content h1{
+    font-family: var(--secondary-font);
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px;
+}
+.banner-content p{
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0px;
+    padding: 0px 0px;
+}
+.banner-content a{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: black;
+    color:var(--white);
+    border-radius: 4px;
+    transition: 0.8s;
+}
+.banner-content a:hover{
+    background: var(--brand-color);
+}
+.poster{
+    flex: 1 1 50%; 
+}
+.poster img{
+    width: 100%;
+    height: 100%;
+}
+
+/*banner section end*/
+/*about us section start*/
+.about-us{
+    margin: 40px 0px;
+}
+.head-content{
+    flex: 1 1 50%;
+    padding: 10px;
+}
+.head-content img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: 10% 10%;
+}
+
+.head-content .head-news a{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 0px;
+    padding: 10px 0px;
+    color: #000;
+    transition: 0.4s;
+}
+.head-news a:hover{
+    color: var(--brand-color);
+    text-decoration: underline;
+}
+.head-news p{
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    padding: 0px 0px;
+    color: var(--primary-color);
+}
+.head-news small{
+    display: block;
+    font-family: "SourceSansPro-Regular";
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0px 0px;
+    color: var(--secondary-color);
+}
+.mini-content{
+    flex: 1 1 50%;
+    height: auto;
+}
+.mini-content .content .blogpic{
+    width: 20%;
+    height: 80px;
+    
+    margin: 15px 5px;
+}
+.mini-content .content .blog{
+    width: 80%;
+    height: auto;
+    padding: 15px;
+}
+.blog h5{
+    margin: 0px;
+}
+.blog a{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0px;
+    padding: 0px;
+    color: var(--primary-color);
+    transition: 0.4s;
+}
+.blog a:hover{
+    color: var(--brand-color);
+    text-decoration: underline;
+}
+.blog p{
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0px;
+    padding: 0px 0px;
+    color: #6c757d;
+}
+.blog small{
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px 0px;
+    padding: 0px 0px;
+    color: var(--secondary-color);
+}
+/*about us section end*/
+/*all stories section stsrt*/
+.story-section{
+    width: 100%;
+    margin-bottom: 60px;
+}
+.all-stories{
+    flex: 1 1 70%;
+    margin-right: 50px;
+}
+.all-stories-title{
+    margin-bottom: 50px;
+}
+.all-stories-content{
+    flex: 1 1 400%;
+}
+.all-stories-poster{
+    flex: 1 1 150%;
+}
+.all-stories-content a{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 0px;
+    padding: 10px 0px;
+    color: var(--primary-color);
+    transition: 0.4s;
+}
+.all-stories-content a:hover{
+    color: var(--brand-color);
+    text-decoration: underline;
+}
+.all-stories-content p{
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding: 0px 0px;
+    color: var(--primary-color);
+}
+.all-stories-content span{
+    display: block;
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0px 0px;
+    color: var(--secondary-color);
+}
+
+.popular{
+    flex: 1 1 30%;
+}
+.popular-title{
+   margin-bottom: 50px;
+}
+/*.popular-block{
+    margin-top: 10px;
+}
+.popular-rank h2{
+    font-family: "SourceSansPro-Regular";
+    font-size: 56px;
+    font-weight: 700;
+    padding: 0px 0px;
+    margin: 0px;
+    color: #212529;
+}
+.popular-content{
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.popular-content a{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    color: #000;
+    transition: 0.4s;
+}
+.popular-content a:hover{
+    color: #03a87c;
+    text-decoration: underline;
+}
+.popular-content p{
+    font-family: "SourceSansPro-Regular";
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px 0px;
+    color: #212529;
+}*/
+.popular-content{
+    margin: 0px;
+}
+.popular-items{
+    display: flex;
+    margin: 0px;
+}
+.popular-items ul{
+    counter-reset: blog-count;
+    margin: 0px;
+}
+.popular-items ul li{
+    display: flex;
+    margin-bottom: 10px;
+}
+.popular-items ul li::before{
+    counter-increment: blog-count;
+    content: "0"counter(blog-count);
+    font-size: 50px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.popular-items ul li a{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    transition: 0.4s;
+}
+.popular-items ul li a:hover{
+    color: var(--brand-color);
+    text-decoration: underline;
+}
+.popular-items ul li small{
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px 0px;
+    color: var(--secondary-color);
+    display: block;
+}
+
+/*all stories section end*/
+/*footer section start*/
+footer{
+    margin-top: 140px;
+    margin-bottom: 200px;
+}
+.copyright{
+    flex: 1 1 70%;
+}
+.copyright h6{
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 2px;
+    padding-bottom: 0px;
+    padding-right: 15px;
+    color: var(--primary-color);
+}
+.copyright p{
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: var(--primary-color);
+}
+.admin{
+    flex: 1 1 30%;
+    align-items: end;
+}
+.admin p{
+    font-family:  var(--primary-font);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px;
+    padding-top: 2px;
+    padding-left: 10px;
+    color: var(--primary-color);
+}
+.admin p span{
+    font-family:  var(--primary-font);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    color: var(--violet);
+}
+/*footer section end*/
+
